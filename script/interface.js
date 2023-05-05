@@ -10,7 +10,11 @@ function handleClick(event){
     let square = event.target;
     let position = square.id;
 
-    handleMove(position)
+   if(handleMove(position)){
+    setTimeout( () =>{
+     alert("Game over")
+    },1000 )
+   }
     updateSquare()  
 }
 
