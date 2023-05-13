@@ -1,7 +1,7 @@
 let board = ["","","","","","","","",""];
 let playerTime = 0;
-let symbols = ["o","x"];
 let gameOver = false;
+let symbols = ["o","x"];
 
 
 function handleMove(position){

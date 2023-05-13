@@ -13,9 +13,9 @@ function handleClick(event){
    if(handleMove(position)){
     setTimeout( () =>{
      alert("Game over")
-    },1000 )
+    },10)
    }
-    updateSquare()  
+    updateSquare()
 }
 
 function updateSquare(){
@@ -30,3 +30,33 @@ function updateSquare(){
         }
     })
 }
+
+ let button = document.getElementById("button");
+ 
+ button.addEventListener("click", () =>{
+
+    board = ["","","","","","","","",""]
+    gameOver = false;
+    playerTime = 0;
+    
+    let squares = document.querySelectorAll(".square")
+
+    squares.forEach((square) =>{
+        
+    let position = square.id
+    let symbol = board[position]
+
+    
+    if(gameOver == false){
+        
+        square.innerHTML = `<div class='${symbol}'></div>`
+    }
+        
+    })
+   
+    
+    
+
+    })
+    
+    
